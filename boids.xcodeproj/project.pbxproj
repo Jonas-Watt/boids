@@ -12,18 +12,6 @@
 		DDA7BC6C2705B9860003923A /* boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC6A2705B9860003923A /* boid.cpp */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		DD4CEFB22703315D00115FAE /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		DD4CEFB42703315D00115FAE /* boids */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = boids; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4CEFB72703315D00115FAE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -50,6 +38,7 @@
 			children = (
 				DD4CEFB62703315D00115FAE /* boids */,
 				DD4CEFB52703315D00115FAE /* Products */,
+				DDA7BC6D2707B5360003923A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +53,6 @@
 		DD4CEFB62703315D00115FAE /* boids */ = {
 			isa = PBXGroup;
 			children = (
-				DDA7BC66270484910003923A /* textures */,
 				DDA7BC62270361410003923A /* boids.entitlements */,
 				DD4CEFB72703315D00115FAE /* main.cpp */,
 				DDA7BC63270476B30003923A /* flock.cpp */,
@@ -75,11 +63,11 @@
 			path = boids;
 			sourceTree = "<group>";
 		};
-		DDA7BC66270484910003923A /* textures */ = {
+		DDA7BC6D2707B5360003923A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = textures;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +79,6 @@
 			buildPhases = (
 				DD4CEFB02703315D00115FAE /* Sources */,
 				DD4CEFB12703315D00115FAE /* Frameworks */,
-				DD4CEFB22703315D00115FAE /* CopyFiles */,
 			);
 			buildRules = (
 			);

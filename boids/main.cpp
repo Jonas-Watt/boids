@@ -8,6 +8,7 @@
 #include <iostream>
 #include <vector>
 #include <math.h>
+#include <filesystem>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
@@ -25,7 +26,21 @@ int main() {
     window.create(sf::VideoMode(750, 750), "Boids", sf::Style::Default, settings);
     window.setFramerateLimit(60);
     
-    Flock flock(15, 5, 100);
+    Flock flock(300, 5, 100);
+    
+    int fps = 0;
+    sf::Clock clock;
+    sf::Time previousTime = clock.getElapsedTime();
+    sf::Time currentTime;
+    
+    sf::Font font;
+    std::filesystem::current_path("/Users/jonas/Dev/boids/boids");
+    font.loadFromFile("Andale Mono.ttf");
+    
+    sf::Text text;
+    text.setFont(font);
+    text.setCharacterSize(12);
+    text.setFillColor(sf::Color::Black);
     
     while (window.isOpen())
     {
@@ -42,10 +57,21 @@ int main() {
             }
         }
         
+        currentTime = clock.getElapsedTime();
+        
+        if (currentTime.asSeconds() - previousTime.asSeconds() >= 1)
+        {
+            text.setString(std::to_string(fps));
+            previousTime = currentTime;
+            fps = 0;
+        }
+        fps++;
+        
         flock.move(window.getSize());
         
         window.clear(sf::Color::White);
         flock.draw(window);
+        window.draw(text);
         window.display();
     }
     return 0;

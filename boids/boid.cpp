@@ -26,10 +26,10 @@ Boid::Boid()
 Boid::Boid(float x, float y, float dx, float dy)
     : velocity(sf::Vector2f(dx, dy)), m_arrow(sf::TriangleFan, 4)
 {
-    m_arrow[0].position = sf::Vector2f(-5., 0);
-    m_arrow[1].position = sf::Vector2f(-10., -5.);
-    m_arrow[2].position = sf::Vector2f(10., 0);
-    m_arrow[3].position = sf::Vector2f(-10., 5.);
+    m_arrow[0].position = sf::Vector2f(-2.5, 0);
+    m_arrow[1].position = sf::Vector2f(-5., -2.5);
+    m_arrow[2].position = sf::Vector2f(5., 0);
+    m_arrow[3].position = sf::Vector2f(-5., 2.5);
     m_arrow[0].color = sf::Color::Black;
     m_arrow[1].color = sf::Color::Black;
     m_arrow[2].color = sf::Color::Black;
@@ -61,11 +61,11 @@ void Boid::avoid_bounds(const int& width, const int& height, const int& margin, 
 
 void Boid::limit_speed(const float& max_speed)
 {
-    const float speed = sqrt(pow(velocity.x, 2) + pow(velocity.y, 2));
-    if (speed > max_speed)
+    const float speed = velocity.x * velocity.x + velocity.y * velocity.y;
+    if (speed > max_speed * max_speed)
     {
-        velocity.x = velocity.x/speed * max_speed;
-        velocity.y = velocity.y/speed * max_speed;
+        velocity.x = velocity.x/sqrt(speed) * max_speed;
+        velocity.y = velocity.y/sqrt(speed) * max_speed;
     }
 }
 
