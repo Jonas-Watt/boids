@@ -1,6 +1,6 @@
 //
 //  flock.cpp
-//  boids
+//  boids v1
 //
 //  Created by Jonas Wattendorff on 29.09.21.
 //

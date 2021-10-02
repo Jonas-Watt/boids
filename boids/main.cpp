@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  boids
+//  boids v1
 //
 //  Created by Jonas Wattendorff on 28.09.21.
 //
@@ -26,7 +26,7 @@ int main() {
     window.create(sf::VideoMode(750, 750), "Boids", sf::Style::Default, settings);
     window.setFramerateLimit(30);
     
-    Flock flock(1000, 5, 100);
+    Flock flock(500, 5, 100);
     
     int fps = 0;
     sf::Clock clock;

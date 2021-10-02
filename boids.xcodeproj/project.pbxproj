@@ -10,6 +10,7 @@
 		DD4CEFB82703315D00115FAE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD4CEFB72703315D00115FAE /* main.cpp */; };
 		DDA7BC65270476B30003923A /* flock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC63270476B30003923A /* flock.cpp */; };
 		DDA7BC6C2705B9860003923A /* boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC6A2705B9860003923A /* boid.cpp */; };
+		DDA7BC872708B37F0003923A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC862708B37F0003923A /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,20 @@
 		DDA7BC64270476B30003923A /* flock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = flock.hpp; sourceTree = "<group>"; };
 		DDA7BC6A2705B9860003923A /* boid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = boid.cpp; sourceTree = "<group>"; };
 		DDA7BC6B2705B9860003923A /* boid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = boid.hpp; sourceTree = "<group>"; };
+		DDA7BC842708B37F0003923A /* boids with predators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "boids with predators"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDA7BC862708B37F0003923A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DDA7BC8B2708B47C0003923A /* boids with predators.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "boids with predators.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DD4CEFB12703315D00115FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA7BC812708B37F0003923A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4CEFB62703315D00115FAE /* boids */,
+				DDA7BC852708B37F0003923A /* boids with predators */,
 				DD4CEFB52703315D00115FAE /* Products */,
 				DDA7BC6D2707B5360003923A /* Frameworks */,
 			);
@@ -46,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				DD4CEFB42703315D00115FAE /* boids */,
+				DDA7BC842708B37F0003923A /* boids with predators */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,12 +66,12 @@
 		DD4CEFB62703315D00115FAE /* boids */ = {
 			isa = PBXGroup;
 			children = (
-				DDA7BC62270361410003923A /* boids.entitlements */,
 				DD4CEFB72703315D00115FAE /* main.cpp */,
 				DDA7BC63270476B30003923A /* flock.cpp */,
 				DDA7BC64270476B30003923A /* flock.hpp */,
 				DDA7BC6A2705B9860003923A /* boid.cpp */,
 				DDA7BC6B2705B9860003923A /* boid.hpp */,
+				DDA7BC62270361410003923A /* boids.entitlements */,
 			);
 			path = boids;
 			sourceTree = "<group>";
@@ -68,6 +81,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDA7BC852708B37F0003923A /* boids with predators */ = {
+			isa = PBXGroup;
+			children = (
+				DDA7BC8B2708B47C0003923A /* boids with predators.entitlements */,
+				DDA7BC862708B37F0003923A /* main.cpp */,
+			);
+			path = "boids with predators";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +111,22 @@
 			productReference = DD4CEFB42703315D00115FAE /* boids */;
 			productType = "com.apple.product-type.tool";
 		};
+		DDA7BC832708B37F0003923A /* boids with predators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA7BC882708B37F0003923A /* Build configuration list for PBXNativeTarget "boids with predators" */;
+			buildPhases = (
+				DDA7BC802708B37F0003923A /* Sources */,
+				DDA7BC812708B37F0003923A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "boids with predators";
+			productName = "boids with predators";
+			productReference = DDA7BC842708B37F0003923A /* boids with predators */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +137,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					DD4CEFB32703315D00115FAE = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					DDA7BC832708B37F0003923A = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -117,6 +158,7 @@
 			projectRoot = "";
 			targets = (
 				DD4CEFB32703315D00115FAE /* boids */,
+				DDA7BC832708B37F0003923A /* boids with predators */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +171,14 @@
 				DD4CEFB82703315D00115FAE /* main.cpp in Sources */,
 				DDA7BC65270476B30003923A /* flock.cpp in Sources */,
 				DDA7BC6C2705B9860003923A /* boid.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDA7BC802708B37F0003923A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA7BC872708B37F0003923A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +339,28 @@
 			};
 			name = Release;
 		};
+		DDA7BC892708B37F0003923A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "boids with predators/boids with predators.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AT364JDGQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDA7BC8A2708B37F0003923A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "boids with predators/boids with predators.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5AT364JDGQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +378,15 @@
 			buildConfigurations = (
 				DD4CEFBC2703315D00115FAE /* Debug */,
 				DD4CEFBD2703315D00115FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA7BC882708B37F0003923A /* Build configuration list for PBXNativeTarget "boids with predators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDA7BC892708B37F0003923A /* Debug */,
+				DDA7BC8A2708B37F0003923A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

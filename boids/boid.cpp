@@ -1,6 +1,6 @@
 //
 //  boid.cpp
-//  boids
+//  boids v1
 //
 //  Created by Jonas Wattendorff on 30.09.21.
 //

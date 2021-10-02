@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>boids with predators.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>boids.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DD4CEFB32703315D00115FAE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDA7BC782708B0C50003923A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DDA7BC832708B37F0003923A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
