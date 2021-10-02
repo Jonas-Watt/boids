@@ -20,6 +20,7 @@ public:
 private:
     void avoid_others(const float& avoiding_factor, const float& min_distance);
     void match_velocity(const float& matching_factor);
+    void fly_to_center(const float& centering_factor);
     std::vector<Boid> m_boids;
     const int m_max_speed;
     const int m_max_vision;

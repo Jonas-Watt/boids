@@ -22,7 +22,6 @@ public:
     Boid();
     Boid(float x, float y, float dx, float dy);
     void move_boid();
-    void change_vel(const sf::Vector2f& dv);
     void avoid_bounds(const int& width, const int& height, const int& margin, const float& avoiding_factor);
     void limit_speed(const float& max_speed);
     sf::Vector2f velocity;

@@ -7,22 +7,6 @@
 
 #include "boid.hpp"
 
-Boid::Boid()
-    : velocity(sf::Vector2f(1, 1)), m_arrow(sf::TriangleFan, 4)
-{
-    m_arrow[0].position = sf::Vector2f(-5., 0);
-    m_arrow[1].position = sf::Vector2f(-10., -5.);
-    m_arrow[2].position = sf::Vector2f(10., 0);
-    m_arrow[3].position = sf::Vector2f(-10., 5.);
-    m_arrow[0].color = sf::Color::Black;
-    m_arrow[1].color = sf::Color::Black;
-    m_arrow[2].color = sf::Color::Black;
-    m_arrow[3].color = sf::Color::Black;
-
-    setPosition(0, 0);
-    setRotation(compute_angle());
-}
-
 Boid::Boid(float x, float y, float dx, float dy)
     : velocity(sf::Vector2f(dx, dy)), m_arrow(sf::TriangleFan, 4)
 {

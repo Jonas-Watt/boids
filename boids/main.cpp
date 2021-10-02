@@ -20,13 +20,13 @@
 
 int main() {
     sf::ContextSettings settings;
-    settings.antialiasingLevel = 8;
+    settings.antialiasingLevel = 5;
     
     sf::RenderWindow window;
     window.create(sf::VideoMode(750, 750), "Boids", sf::Style::Default, settings);
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(30);
     
-    Flock flock(300, 5, 100);
+    Flock flock(1000, 5, 100);
     
     int fps = 0;
     sf::Clock clock;
