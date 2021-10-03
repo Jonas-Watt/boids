@@ -5,12 +5,14 @@
 //  Created by Jonas Wattendorff on 02.10.21.
 //
 
+#include "window.hpp"
+
 #include <iostream>
 
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 
-int main(int argc, const char * argv[]) {
-    std::cout << "Hello, World!\n";
+int main() {
+    run_app();
     return 0;
 }

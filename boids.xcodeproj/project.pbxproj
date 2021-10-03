@@ -11,6 +11,9 @@
 		DDA7BC65270476B30003923A /* flock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC63270476B30003923A /* flock.cpp */; };
 		DDA7BC6C2705B9860003923A /* boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC6A2705B9860003923A /* boid.cpp */; };
 		DDA7BC872708B37F0003923A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC862708B37F0003923A /* main.cpp */; };
+		DDA7BC8E2709BA9E0003923A /* boid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC8C2709BA9E0003923A /* boid.cpp */; };
+		DDA7BC912709C1240003923A /* window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC8F2709C1240003923A /* window.cpp */; };
+		DDA7BC942709C7510003923A /* flock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DDA7BC922709C7510003923A /* flock.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,12 @@
 		DDA7BC842708B37F0003923A /* boids with predators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "boids with predators"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDA7BC862708B37F0003923A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DDA7BC8B2708B47C0003923A /* boids with predators.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "boids with predators.entitlements"; sourceTree = "<group>"; };
+		DDA7BC8C2709BA9E0003923A /* boid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = boid.cpp; sourceTree = "<group>"; };
+		DDA7BC8D2709BA9E0003923A /* boid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = boid.hpp; sourceTree = "<group>"; };
+		DDA7BC8F2709C1240003923A /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		DDA7BC902709C1240003923A /* window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = window.hpp; sourceTree = "<group>"; };
+		DDA7BC922709C7510003923A /* flock.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = flock.cpp; sourceTree = "<group>"; };
+		DDA7BC932709C7510003923A /* flock.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = flock.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,12 @@
 			children = (
 				DDA7BC8B2708B47C0003923A /* boids with predators.entitlements */,
 				DDA7BC862708B37F0003923A /* main.cpp */,
+				DDA7BC8C2709BA9E0003923A /* boid.cpp */,
+				DDA7BC8D2709BA9E0003923A /* boid.hpp */,
+				DDA7BC8F2709C1240003923A /* window.cpp */,
+				DDA7BC902709C1240003923A /* window.hpp */,
+				DDA7BC922709C7510003923A /* flock.cpp */,
+				DDA7BC932709C7510003923A /* flock.hpp */,
 			);
 			path = "boids with predators";
 			sourceTree = "<group>";
@@ -178,7 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA7BC912709C1240003923A /* window.cpp in Sources */,
+				DDA7BC942709C7510003923A /* flock.cpp in Sources */,
 				DDA7BC872708B37F0003923A /* main.cpp in Sources */,
+				DDA7BC8E2709BA9E0003923A /* boid.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
