@@ -15,10 +15,10 @@ void run_app()
     sf::ContextSettings settings;
     settings.antialiasingLevel = 4;
     
-    sf::RenderWindow window(sf::VideoMode(512, 512), "Boids with Predator", sf::Style::Default, settings);
+    sf::RenderWindow window(sf::VideoMode(1024, 512), "Boids with Predator", sf::Style::Default, settings);
     window.setFramerateLimit(60);
     
-    Flock flock(window.getSize(), 50, 5, 7);
+    Flock flock(window.getSize(), 700, 4, 5, 100, 200);
     
     while (window.isOpen())
         {
@@ -35,7 +35,7 @@ void run_app()
                 }
             }
             
-            flock.move();
+            flock.move(window.getSize());
             
             window.clear(sf::Color::White);
             window.draw(flock.predator);

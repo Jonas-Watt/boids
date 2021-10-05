@@ -13,7 +13,7 @@
 class Boid : public sf::Drawable, public sf::Transformable
 {
 public:
-    Boid(const sf::Vector2f& pos, const sf::Vector2f& vel, const float scale);
+    Boid(const sf::Vector2f& pos, const sf::Vector2f& vel, const float scale, const sf::Color color);
     Boid();
     void move_boid();
     sf::Vector2f velocity;

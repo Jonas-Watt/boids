@@ -9,17 +9,17 @@
 
 #include <math.h>
 
-Boid::Boid(const sf::Vector2f& pos, const sf::Vector2f& vel, const float scale)
+Boid::Boid(const sf::Vector2f& pos, const sf::Vector2f& vel, const float scale, const sf::Color color)
     : velocity(vel), m_vertices(sf::TriangleFan, 4)
 {
     m_vertices[0].position = scale * sf::Vector2f(-2.5, 0);
     m_vertices[1].position = scale * sf::Vector2f(-5., -2.5);
     m_vertices[2].position = scale * sf::Vector2f(5., 0);
     m_vertices[3].position = scale * sf::Vector2f(-5., 2.5);
-    m_vertices[0].color = sf::Color::Black;
-    m_vertices[1].color = sf::Color::Black;
-    m_vertices[2].color = sf::Color::Black;
-    m_vertices[3].color = sf::Color::Black;
+    m_vertices[0].color = color;
+    m_vertices[1].color = color;
+    m_vertices[2].color = color;
+    m_vertices[3].color = color;
     
     setPosition(pos);
     setRotation(compute_angle());
