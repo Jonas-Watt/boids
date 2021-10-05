@@ -1,9 +1,10 @@
 # boids
+
+![Image 2](boids%20with%20predators/pictures/Bildschirmfoto%202021-10-05%20um%2016.31.29.png)
+
 https://en.wikipedia.org/wiki/Boids
 
 also https://eater.net/boids and https://www.youtube.com/watch?v=4LWmRuB-uNU
-
-![Image 1](boids with predators/pictures/Bildschirmfoto 2021-10-05 um 16.31.15.png?raw=true "Title")
 
 ## Rules:
 Flock/Swarm:
@@ -14,3 +15,9 @@ Flock/Swarm:
  
  Predator:
   - fly towards the center of mass of surrounding boids (more vision than the Flock)
+
+![Image 3](boids%20with%20predators/pictures/Bildschirmfoto%202021-10-05%20um%2017.02.41.png)
+
+![Image 1](boids%20with%20predators/pictures/Bildschirmfoto%202021-10-05%20um%2016.31.15.png)
+
+![Image 4](boids%20with%20predators/pictures/Bildschirmfoto%202021-10-05%20um%2017.03.18.png)
