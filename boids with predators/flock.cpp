@@ -22,7 +22,7 @@ Flock::Flock(const sf::Vector2u& window_size, const int num_flock, const float m
 void Flock::move(const sf::Vector2u& window_size)
 {
     avoid_predator(0.5);
-    avoid_others(0.7, 10);
+    avoid_others(0.7, 15);
     match_velocity(0.3);
     fly_to_center(0.3);
     avoid_bounds(window_size, 100, 0.1);
@@ -165,6 +165,23 @@ void Flock::hunt_flock(const float hunting_factor)
     }
     if (num_neighbours > 0)
         predator.velocity += hunt_neighbours/(float)num_neighbours * hunting_factor;
+    
+    //--------------------------------------------------------------------------
+    // Only chasing nearest doesnt work as a hunting technique
+    
+//    sf::Vector2f nearest_neighbour_pos = predator.getPosition();
+//    float nearest_neighbour_dist = m_max_vision_predator;
+//    for (Boid& boid : flock)
+//    {
+//        float distance_sqr = (boid.getPosition().x-predator.getPosition().x) * (boid.getPosition().x-predator.getPosition().x) + (boid.getPosition().y-predator.getPosition().y) * (boid.getPosition().y-predator.getPosition().y);
+//        if (distance_sqr < nearest_neighbour_dist * nearest_neighbour_dist)
+//        {
+//            nearest_neighbour_dist = sqrt(distance_sqr);
+//            nearest_neighbour_pos = boid.getPosition();
+//        }
+//    }
+//    if (nearest_neighbour_dist < m_max_vision_predator)
+//        predator.velocity += (nearest_neighbour_pos - predator.getPosition())/nearest_neighbour_dist * hunting_factor;
 }
 
 void Flock::avoid_predator(const float avoiding_factor)

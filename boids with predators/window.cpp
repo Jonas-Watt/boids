@@ -18,7 +18,7 @@ void run_app()
     sf::RenderWindow window(sf::VideoMode(1024, 512), "Boids with Predator", sf::Style::Default, settings);
     window.setFramerateLimit(60);
     
-    Flock flock(window.getSize(), 700, 4, 5, 100, 200);
+    Flock flock(window.getSize(), 1000, 3, 3.5, 50, 200);
     
     while (window.isOpen())
         {
